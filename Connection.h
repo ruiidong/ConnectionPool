@@ -12,7 +12,7 @@ public:
     // 释放数据库连接资源
     ~connection();
     // 连接数据库
-    bool connect(string ip, unsigned short port, string user, string password, string dbname);
+    bool connect(string ip, unsigned short port, string username, string password, string dbname);
     // 更新操作 insert、delete、update
     bool update(string sql);
     // 查询操作 select

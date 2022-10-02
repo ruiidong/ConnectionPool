@@ -99,13 +99,12 @@ CMakeFiles/main.dir/main.cpp.o: /home/lrd/ConnectionPool/main.cpp \
  /usr/include/c++/5/bits/basic_ios.tcc \
  /usr/include/c++/5/bits/ostream.tcc /usr/include/c++/5/istream \
  /usr/include/c++/5/bits/istream.tcc \
- /home/lrd/ConnectionPool/Connection.h /usr/include/mysql/mysql.h \
- /usr/include/mysql/mysql_version.h /usr/include/mysql/mysql_com.h \
- /usr/include/mysql/binary_log_types.h /usr/include/mysql/my_command.h \
- /usr/include/mysql/mysql_time.h /usr/include/mysql/my_list.h \
- /usr/include/mysql/mysql/client_plugin.h \
- /usr/include/mysql/mysql/plugin_auth_common.h \
- /usr/include/mysql/typelib.h /usr/include/mysql/my_alloc.h \
- /usr/include/mysql/mysql/psi/psi_memory.h \
- /usr/include/mysql/mysql/psi/psi_base.h \
- /home/lrd/ConnectionPool/public.h
+ /home/lrd/ConnectionPool/ConnectionPool.h /usr/include/c++/5/queue \
+ /usr/include/c++/5/deque /usr/include/c++/5/bits/stl_construct.h \
+ /usr/include/c++/5/bits/stl_uninitialized.h \
+ /usr/include/c++/5/bits/stl_deque.h /usr/include/c++/5/bits/deque.tcc \
+ /usr/include/c++/5/vector /usr/include/c++/5/bits/stl_vector.h \
+ /usr/include/c++/5/bits/stl_bvector.h /usr/include/c++/5/bits/vector.tcc \
+ /usr/include/c++/5/bits/stl_heap.h /usr/include/c++/5/bits/stl_queue.h \
+ /usr/include/c++/5/bits/uses_allocator.h /usr/include/c++/5/atomic \
+ /usr/include/c++/5/bits/atomic_base.h
