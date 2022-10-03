@@ -1,6 +1,7 @@
 #include "ConnectionPool.h"
 #include "public.h"
 #include "Connection.h"
+#include <thread>
 
 bool connectionpool::loadConfigFile()
 {
@@ -74,9 +75,33 @@ connectionpool::connectionpool()
 
     for (int i = 0; i < initSize_; i++)
     {
-        connection * conn= new connection();     
-        conn->connect(ip_,port_,username_,password_,dbname_);
+        connection *conn = new connection();
+        conn->connect(ip_, port_, username_, password_, dbname_);
         connQue_.push(conn);
         connCnt_++;
+    }
+
+    thread produceConn(std::bind(&connectionpool::produceConnTask, this));
+}
+
+void connectionpool::produceConnTask()
+{
+    for (;;)
+    {
+        unique_lock<mutex> lock(queueMtx_);
+        while (!connQue_.empty())
+        {
+            cv_.wait(lock);
+        }
+
+        if (connCnt_ < maxSize_)
+        {
+            connection *conn = new connection();
+            conn->connect(ip_, port_, username_, password_, dbname_);
+            connQue_.push(conn);
+            connCnt_++;
+        }
+
+        cv_.notify_all();
     }
 }

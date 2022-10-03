@@ -71,6 +71,11 @@
 				"backtrace" : 2,
 				"fragment" : "-lmysqlclient",
 				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"

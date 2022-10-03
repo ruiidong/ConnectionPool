@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "streambuf": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "mutex": "cpp"
     }
 }

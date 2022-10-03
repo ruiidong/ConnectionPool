@@ -92,14 +92,27 @@ CMakeFiles/main.dir/ConnectionPool.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/c++/5/bits/basic_string.tcc /usr/include/c++/5/atomic \
- /usr/include/c++/5/bits/atomic_base.h /home/lrd/ConnectionPool/public.h \
- /usr/include/c++/5/iostream /usr/include/c++/5/ostream \
- /usr/include/c++/5/ios /usr/include/c++/5/bits/ios_base.h \
- /usr/include/c++/5/bits/locale_classes.h \
- /usr/include/c++/5/bits/locale_classes.tcc \
+ /usr/include/c++/5/bits/atomic_base.h /usr/include/c++/5/mutex \
+ /usr/include/c++/5/tuple /usr/include/c++/5/utility \
+ /usr/include/c++/5/bits/stl_relops.h /usr/include/c++/5/array \
+ /usr/include/c++/5/stdexcept /usr/include/c++/5/chrono \
+ /usr/include/c++/5/ratio /usr/include/c++/5/limits \
+ /usr/include/c++/5/ctime /usr/include/c++/5/bits/parse_numbers.h \
+ /usr/include/c++/5/functional /usr/include/c++/5/typeinfo \
  /usr/include/c++/5/system_error \
  /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h \
- /usr/include/c++/5/stdexcept /usr/include/c++/5/streambuf \
+ /usr/include/c++/5/condition_variable \
+ /usr/include/c++/5/ext/concurrence.h \
+ /usr/include/c++/5/bits/unique_ptr.h \
+ /usr/include/c++/5/bits/shared_ptr.h \
+ /usr/include/c++/5/bits/shared_ptr_base.h \
+ /usr/include/c++/5/bits/allocated_ptr.h \
+ /usr/include/c++/5/ext/aligned_buffer.h \
+ /home/lrd/ConnectionPool/public.h /usr/include/c++/5/iostream \
+ /usr/include/c++/5/ostream /usr/include/c++/5/ios \
+ /usr/include/c++/5/bits/ios_base.h \
+ /usr/include/c++/5/bits/locale_classes.h \
+ /usr/include/c++/5/bits/locale_classes.tcc /usr/include/c++/5/streambuf \
  /usr/include/c++/5/bits/streambuf.tcc \
  /usr/include/c++/5/bits/basic_ios.h \
  /usr/include/c++/5/bits/locale_facets.h /usr/include/c++/5/cwctype \
@@ -119,4 +132,8 @@ CMakeFiles/main.dir/ConnectionPool.cpp.o: \
  /usr/include/mysql/mysql/plugin_auth_common.h \
  /usr/include/mysql/typelib.h /usr/include/mysql/my_alloc.h \
  /usr/include/mysql/mysql/psi/psi_memory.h \
- /usr/include/mysql/mysql/psi/psi_base.h
+ /usr/include/mysql/mysql/psi/psi_base.h /usr/include/c++/5/thread \
+ /usr/include/c++/5/memory /usr/include/c++/5/bits/stl_tempbuf.h \
+ /usr/include/c++/5/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/5/bits/shared_ptr_atomic.h \
+ /usr/include/c++/5/backward/auto_ptr.h

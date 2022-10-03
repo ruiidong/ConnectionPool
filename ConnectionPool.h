@@ -2,6 +2,8 @@
 #include <queue>
 #include <string>
 #include <atomic>
+#include <mutex>
+#include <condition_variable>
 
 using namespace std;
 
@@ -12,6 +14,7 @@ public:
     connectionpool();
 private:
     bool loadConfigFile();
+    void produceConnTask();
 
     string ip_;
     unsigned short port_;
@@ -25,4 +28,7 @@ private:
 
     queue<connection*> connQue_;
     atomic_int connCnt_;            //已创建连接的数量
+
+    mutex queueMtx_;
+    condition_variable cv_;
 };

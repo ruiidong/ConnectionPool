@@ -278,6 +278,28 @@ CMakeFiles/main.dir/ConnectionPool.cpp.o: ../ConnectionPool.cpp \
   /usr/include/c++/5/bits/basic_string.tcc \
   /usr/include/c++/5/atomic \
   /usr/include/c++/5/bits/atomic_base.h \
+  /usr/include/c++/5/mutex \
+  /usr/include/c++/5/tuple \
+  /usr/include/c++/5/utility \
+  /usr/include/c++/5/bits/stl_relops.h \
+  /usr/include/c++/5/array \
+  /usr/include/c++/5/stdexcept \
+  /usr/include/c++/5/chrono \
+  /usr/include/c++/5/ratio \
+  /usr/include/c++/5/limits \
+  /usr/include/c++/5/ctime \
+  /usr/include/c++/5/bits/parse_numbers.h \
+  /usr/include/c++/5/functional \
+  /usr/include/c++/5/typeinfo \
+  /usr/include/c++/5/system_error \
+  /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h \
+  /usr/include/c++/5/condition_variable \
+  /usr/include/c++/5/ext/concurrence.h \
+  /usr/include/c++/5/bits/unique_ptr.h \
+  /usr/include/c++/5/bits/shared_ptr.h \
+  /usr/include/c++/5/bits/shared_ptr_base.h \
+  /usr/include/c++/5/bits/allocated_ptr.h \
+  /usr/include/c++/5/ext/aligned_buffer.h \
   ../public.h \
   /usr/include/c++/5/iostream \
   /usr/include/c++/5/ostream \
@@ -285,9 +307,6 @@ CMakeFiles/main.dir/ConnectionPool.cpp.o: ../ConnectionPool.cpp \
   /usr/include/c++/5/bits/ios_base.h \
   /usr/include/c++/5/bits/locale_classes.h \
   /usr/include/c++/5/bits/locale_classes.tcc \
-  /usr/include/c++/5/system_error \
-  /usr/include/x86_64-linux-gnu/c++/5/bits/error_constants.h \
-  /usr/include/c++/5/stdexcept \
   /usr/include/c++/5/streambuf \
   /usr/include/c++/5/bits/streambuf.tcc \
   /usr/include/c++/5/bits/basic_ios.h \
@@ -315,7 +334,13 @@ CMakeFiles/main.dir/ConnectionPool.cpp.o: ../ConnectionPool.cpp \
   /usr/include/mysql/typelib.h \
   /usr/include/mysql/my_alloc.h \
   /usr/include/mysql/mysql/psi/psi_memory.h \
-  /usr/include/mysql/mysql/psi/psi_base.h
+  /usr/include/mysql/mysql/psi/psi_base.h \
+  /usr/include/c++/5/thread \
+  /usr/include/c++/5/memory \
+  /usr/include/c++/5/bits/stl_tempbuf.h \
+  /usr/include/c++/5/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/5/bits/shared_ptr_atomic.h \
+  /usr/include/c++/5/backward/auto_ptr.h
 
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
@@ -466,8 +491,55 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/5/bits/stl_queue.h \
   /usr/include/c++/5/bits/uses_allocator.h \
   /usr/include/c++/5/atomic \
-  /usr/include/c++/5/bits/atomic_base.h
+  /usr/include/c++/5/bits/atomic_base.h \
+  /usr/include/c++/5/mutex \
+  /usr/include/c++/5/tuple \
+  /usr/include/c++/5/utility \
+  /usr/include/c++/5/bits/stl_relops.h \
+  /usr/include/c++/5/array \
+  /usr/include/c++/5/chrono \
+  /usr/include/c++/5/ratio \
+  /usr/include/c++/5/limits \
+  /usr/include/c++/5/ctime \
+  /usr/include/c++/5/bits/parse_numbers.h \
+  /usr/include/c++/5/functional \
+  /usr/include/c++/5/typeinfo \
+  /usr/include/c++/5/condition_variable \
+  /usr/include/c++/5/ext/concurrence.h \
+  /usr/include/c++/5/bits/unique_ptr.h \
+  /usr/include/c++/5/bits/shared_ptr.h \
+  /usr/include/c++/5/bits/shared_ptr_base.h \
+  /usr/include/c++/5/bits/allocated_ptr.h \
+  /usr/include/c++/5/ext/aligned_buffer.h
 
+
+/usr/include/c++/5/thread:
+
+/usr/include/c++/5/ext/aligned_buffer.h:
+
+/usr/include/c++/5/bits/shared_ptr_base.h:
+
+/usr/include/c++/5/bits/shared_ptr.h:
+
+/usr/include/c++/5/memory:
+
+/usr/include/c++/5/condition_variable:
+
+/usr/include/c++/5/functional:
+
+/usr/include/c++/5/bits/parse_numbers.h:
+
+/usr/include/c++/5/ctime:
+
+/usr/include/c++/5/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/5/limits:
+
+/usr/include/c++/5/array:
+
+/usr/include/c++/5/utility:
+
+/usr/include/c++/5/mutex:
 
 /usr/include/c++/5/atomic:
 
@@ -489,11 +561,17 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/wctype.h:
 
+/usr/include/c++/5/bits/allocated_ptr.h:
+
 /usr/include/c++/5/bits/basic_ios.h:
+
+/usr/include/c++/5/ratio:
 
 /usr/include/c++/5/bits/streambuf.tcc:
 
 /usr/include/c++/5/streambuf:
+
+/usr/include/c++/5/chrono:
 
 /usr/include/c++/5/stdexcept:
 
@@ -555,6 +633,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/5/cerrno:
 
+/usr/include/c++/5/ext/concurrence.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/_G_config.h:
@@ -580,6 +660,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/5/bits/allocator.h:
 
 /usr/include/wchar.h:
+
+/usr/include/c++/5/bits/shared_ptr_atomic.h:
 
 /usr/include/xlocale.h:
 
@@ -641,6 +723,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/5/bits/char_traits.h:
 
+/usr/include/c++/5/bits/unique_ptr.h:
+
 /usr/include/mysql/typelib.h:
 
 /usr/include/time.h:
@@ -648,6 +732,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/5/bits/nested_exception.h:
 
 /usr/include/c++/5/ext/type_traits.h:
+
+/usr/include/c++/5/backward/auto_ptr.h:
 
 ../Connection.cpp:
 
@@ -660,6 +746,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/5/bits/stl_function.h:
 
 ../main.cpp:
+
+/usr/include/c++/5/tuple:
 
 ../Connection.h:
 
@@ -749,6 +837,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
+/usr/include/c++/5/bits/stl_relops.h:
+
 /usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -783,6 +873,8 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/stdlib.h:
 
+/usr/include/c++/5/typeinfo:
+
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/5/bits/postypes.h:
@@ -800,5 +892,7 @@ CMakeFiles/main.dir/main.cpp.o: ../main.cpp \
 ../public.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/5/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/sys/sysmacros.h:
