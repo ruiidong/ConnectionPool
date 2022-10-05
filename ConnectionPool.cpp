@@ -105,3 +105,26 @@ void connectionpool::produceConnTask()
         cv_.notify_all();
     }
 }
+
+shared_ptr<connection> connectionpool::getConnection()
+{
+    unique_lock<mutex> lock(queueMtx_);
+    while (connQue_.empty())
+    {
+        if (cv_status::timeout == cv_.wait_for(lock, std::chrono::milliseconds(connectionTimeout_)))
+        {
+            if (connQue_.empty())
+            {
+                LOG("获取链接超时...获取连接失败");
+                return nullptr;
+            }
+        }
+    }
+    shared_ptr<connection> sp(connQue_.front(), [&](connection *conn)
+                              {
+          unique_lock<mutex> lock(queueMtx_);
+          connQue_.push(conn); });
+    connQue_.pop();
+    cv_.notify_all();
+    return sp;
+}

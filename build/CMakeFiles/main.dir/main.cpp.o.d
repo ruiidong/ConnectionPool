@@ -119,4 +119,8 @@ CMakeFiles/main.dir/main.cpp.o: /home/lrd/ConnectionPool/main.cpp \
  /usr/include/c++/5/bits/shared_ptr.h \
  /usr/include/c++/5/bits/shared_ptr_base.h \
  /usr/include/c++/5/bits/allocated_ptr.h \
- /usr/include/c++/5/ext/aligned_buffer.h
+ /usr/include/c++/5/ext/aligned_buffer.h /usr/include/c++/5/memory \
+ /usr/include/c++/5/bits/stl_tempbuf.h \
+ /usr/include/c++/5/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/5/bits/shared_ptr_atomic.h \
+ /usr/include/c++/5/backward/auto_ptr.h

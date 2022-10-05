@@ -4,6 +4,7 @@
 #include <atomic>
 #include <mutex>
 #include <condition_variable>
+#include <memory>
 
 using namespace std;
 
@@ -12,6 +13,7 @@ class connectionpool
 {
 public:
     connectionpool();
+    shared_ptr<connection> getConnection();
 private:
     bool loadConfigFile();
     void produceConnTask();
