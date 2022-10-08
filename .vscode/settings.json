@@ -4,6 +4,7 @@
         "ostream": "cpp",
         "mutex": "cpp",
         "condition_variable": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "iostream": "cpp"
     }
 }

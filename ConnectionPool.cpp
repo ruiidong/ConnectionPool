@@ -3,6 +3,12 @@
 #include "Connection.h"
 #include <thread>
 
+connectionpool* connectionpool::getInstance()
+{
+    static connectionpool connpool;
+    return &connpool;
+}
+
 bool connectionpool::loadConfigFile()
 {
     FILE *fp = fopen("../mysql.cnf", "r");
@@ -86,7 +92,7 @@ connectionpool::connectionpool()
     produceConn.detach();
 
     thread scanConn(std::bind(&connectionpool::scanConnTask, this));
-    produceConn.detach();
+    scanConn.detach();
 }
 
 void connectionpool::produceConnTask()

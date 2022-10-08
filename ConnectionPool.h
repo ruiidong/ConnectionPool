@@ -12,9 +12,11 @@ class connection;
 class connectionpool
 {
 public:
-    connectionpool();
+    static connectionpool* getInstance();
     shared_ptr<connection> getConnection();
 private:
+    connectionpool();
+
     bool loadConfigFile();
     void produceConnTask();
     void scanConnTask();
