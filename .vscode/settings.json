@@ -3,6 +3,7 @@
         "streambuf": "cpp",
         "ostream": "cpp",
         "mutex": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "thread": "cpp"
     }
 }

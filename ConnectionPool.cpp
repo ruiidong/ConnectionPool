@@ -78,10 +78,15 @@ connectionpool::connectionpool()
         connection *conn = new connection();
         conn->connect(ip_, port_, username_, password_, dbname_);
         connQue_.push(conn);
+        conn->refreshTime();
         connCnt_++;
     }
 
     thread produceConn(std::bind(&connectionpool::produceConnTask, this));
+    produceConn.detach();
+
+    thread scanConn(std::bind(&connectionpool::scanConnTask, this));
+    produceConn.detach();
 }
 
 void connectionpool::produceConnTask()
@@ -99,6 +104,7 @@ void connectionpool::produceConnTask()
             connection *conn = new connection();
             conn->connect(ip_, port_, username_, password_, dbname_);
             connQue_.push(conn);
+            conn->refreshTime();
             connCnt_++;
         }
 
@@ -123,8 +129,33 @@ shared_ptr<connection> connectionpool::getConnection()
     shared_ptr<connection> sp(connQue_.front(), [&](connection *conn)
                               {
           unique_lock<mutex> lock(queueMtx_);
-          connQue_.push(conn); });
+          connQue_.push(conn); 
+          conn->refreshTime(); });
     connQue_.pop();
     cv_.notify_all();
     return sp;
+}
+
+void connectionpool::scanConnTask()
+{
+    for (;;)
+    {
+        this_thread::sleep_for(std::chrono::seconds(maxIdleTime_));
+
+        unique_lock<mutex> lock(queueMtx_);
+        while(connCnt_ > initSize_)
+        {
+            connection* conn = connQue_.front();
+            if(conn->getTime() >= (maxIdleTime_*1000))
+            {
+                connQue_.pop();
+                delete conn;
+                connCnt_--;
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
 }

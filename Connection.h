@@ -17,7 +17,12 @@ public:
     bool update(string sql);
     // 查询操作 select
     MYSQL_RES *query(string sql);
+
+    void refreshTime();      //设置入队时间
+    clock_t getTime() const; //获得空闲时间
+
 private:
-    MYSQL *_conn;
     // 表示和MySQL Server的一条连接
+    MYSQL *_conn;
+    clock_t time_; //入队时间，以毫秒为单位
 };

@@ -17,6 +17,7 @@ public:
 private:
     bool loadConfigFile();
     void produceConnTask();
+    void scanConnTask();
 
     string ip_;
     unsigned short port_;

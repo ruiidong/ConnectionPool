@@ -41,3 +41,13 @@ MYSQL_RES *connection::query(string sql)
     }
     return mysql_use_result(_conn);
 }
+
+void connection::refreshTime()   //设置入队时间
+{
+    time_ = clock();
+}
+
+clock_t connection::getTime() const //获得空闲时间
+{
+    return clock() - time_;
+}
