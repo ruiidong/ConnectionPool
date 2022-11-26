@@ -1,3 +1,0 @@
-/home/lrd/ConnectionPool/build/CMakeFiles/main.dir
-/home/lrd/ConnectionPool/build/CMakeFiles/edit_cache.dir
-/home/lrd/ConnectionPool/build/CMakeFiles/rebuild_cache.dir
